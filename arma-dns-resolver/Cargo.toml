@@ -1,0 +1,18 @@
+[package]
+name = "arma-dns-resolver"
+description = "Arma 3 Extension written in Rust for resolving DNS names"
+version = "1.0.0"
+edition = "2021"
+authors = ["johnb43"]
+repository = "https://github.com/johnb432/Arma-DNS-resolver"
+license = "MIT"
+keywords = ["arma"]
+readme = "../README.md"
+
+[dependencies]
+arma-rs = "1.3"
+trust-dns-resolver = "*"
+
+[lib]
+name = "arma_dns_resolver_x64"
+crate-type = ["cdylib"]
